@@ -1,13 +1,20 @@
-import React from 'react'
-import { FC } from 'react'
-import logo from '../logo.svg'
+import React, { FC } from 'react'
+import { Header } from '../components/Header'
 
 const IndexPage: FC = () => {
   return (
     <>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div
+        style={{
+          height: '100vh',
+          backgroundImage: 'url(/images/flower-back1042.jpg)',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+        }}
+      >
+        <Header />
+        <div className="App">
           <p>
             Edit <code>src/pages/index.tsx</code> and save to reload.
           </p>
@@ -19,8 +26,9 @@ const IndexPage: FC = () => {
           >
             Vite Docs
           </a>
-        </header>
+        </div>
       </div>
+      <div>kkk</div>
     </>
   )
 }
