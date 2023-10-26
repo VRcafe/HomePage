@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { Header } from '../components/Header'
+import { Typography } from '@mui/material'
 
 const IndexPage: FC = () => {
   return (
@@ -18,14 +19,13 @@ const IndexPage: FC = () => {
           <p>
             Edit <code>src/pages/index.tsx</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
+          <Typography ml={20} variant="h4" style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}>
+            {'お茶と、'}
+            <br />
+            {'　　VRと、'}
+            <br />
+            {'　　　　AIと。'}
+          </Typography>
         </div>
       </div>
       <div>kkk</div>
