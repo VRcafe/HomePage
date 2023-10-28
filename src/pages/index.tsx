@@ -1,10 +1,11 @@
 import React, { FC } from 'react'
 import { Header } from '../components/Header'
 import { ImageList, Typography, useMediaQuery } from '@mui/material'
-import { Box } from '@mui/system'
+import { Box, textAlign } from '@mui/system'
 import { ContentsList } from '../components/ContentsList'
 import { RepresentativeList, GroupList } from '../components/IntroductionList'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
 
 const IndexPage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:600px)')
@@ -37,21 +38,29 @@ const IndexPage: FC = () => {
         <Typography align="center" variant="h6">
           アナログとデジタルの有効的融合で人々の暮らしや感性を豊かにする
         </Typography>
-        <Typography
-          align="center"
-          variant="h6"
+        <Box
+          alignItems="center"
+          justifyItems="center"
+          display="flex"
+          width="30vw"
+          padding={2}
           marginTop={5}
           marginLeft="auto"
           marginRight="auto"
-          padding={2}
-          width="30vw"
           color="white"
           sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <ArrowForwardIosIcon fontSize="small" />
-          view more
-        </Typography>
+          <Typography
+            marginLeft="auto"
+            marginRight="auto"
+            variant="h6"
+            color="white"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            view more
+          </Typography>
+        </Box>
       </Box>
       {/* --- コンテンツ --- */}
       <Box component="section">
@@ -123,6 +132,31 @@ const IndexPage: FC = () => {
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー ONLINE SHOP ー
+        </Typography>
+      </Box>
+      <Box
+        alignItems="center"
+        justifyItems="center"
+        display="flex"
+        width="20vw"
+        padding={2}
+        marginLeft="auto"
+        marginBottom={5}
+        marginRight={2}
+        color="white"
+        sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
+      >
+        <KeyboardDoubleArrowUpIcon fontSize="small" />
+        <Typography
+          marginLeft="auto"
+          marginRight="auto"
+          align="center"
+          variant="h6"
+          color="white"
+          sx={{}}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          back to top
         </Typography>
       </Box>
     </>
