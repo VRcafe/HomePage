@@ -4,6 +4,7 @@ import { ImageList, Typography, useMediaQuery } from '@mui/material'
 import { Box } from '@mui/system'
 import { ContentsList } from '../components/ContentsList'
 import { RepresentativeList, GroupList } from '../components/IntroductionList'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 
 const IndexPage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:600px)')
@@ -28,6 +29,7 @@ const IndexPage: FC = () => {
           {'　　　　AIと。'}
         </Typography>
       </Box>
+      {/* --- 使命 --- */}
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー OUR MISSIONS ー
@@ -35,7 +37,23 @@ const IndexPage: FC = () => {
         <Typography align="center" variant="h6">
           アナログとデジタルの有効的融合で人々の暮らしや感性を豊かにする
         </Typography>
+        <Typography
+          align="center"
+          variant="h6"
+          marginTop={5}
+          marginLeft="auto"
+          marginRight="auto"
+          padding={2}
+          width="30vw"
+          color="white"
+          sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          <ArrowForwardIosIcon fontSize="small" />
+          view more
+        </Typography>
       </Box>
+      {/* --- コンテンツ --- */}
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー CONTENTS ー
@@ -50,6 +68,7 @@ const IndexPage: FC = () => {
           </ImageList>
         )}
       </Box>
+      {/* --- 実績 --- */}
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー CASES ー
@@ -58,6 +77,7 @@ const IndexPage: FC = () => {
           第76回九大祭
         </Typography>
       </Box>
+      {/* --- メンバー --- */}
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー ABOUT US ー
@@ -81,6 +101,7 @@ const IndexPage: FC = () => {
           </ImageList>
         )}
       </Box>
+      {/* --- ブログ --- */}
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー BLOG ー
@@ -98,6 +119,7 @@ const IndexPage: FC = () => {
           </a>
         </Box>
       </Box>
+      {/* --- オンラインショップ --- */}
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー ONLINE SHOP ー
