@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Header } from '../components/Header'
 import { ImageList, Typography, useMediaQuery } from '@mui/material'
-import { Box, textAlign } from '@mui/system'
+import { Box } from '@mui/system'
 import { ContentsList } from '../components/ContentsList'
 import { RepresentativeList, GroupList } from '../components/IntroductionList'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
@@ -145,17 +145,10 @@ const IndexPage: FC = () => {
         marginRight={2}
         color="white"
         sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
         <KeyboardDoubleArrowUpIcon fontSize="small" />
-        <Typography
-          marginLeft="auto"
-          marginRight="auto"
-          align="center"
-          variant="h6"
-          color="white"
-          sx={{}}
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        >
+        <Typography marginLeft="auto" marginRight="auto" align="center" variant="h6" color="white">
           back to top
         </Typography>
       </Box>

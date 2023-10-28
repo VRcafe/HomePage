@@ -18,7 +18,7 @@ export const RepresentativeList: FC = () => {
           variant="h6"
           sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
         >
-          <ArrowForwardIosIcon />
+          <ArrowForwardIosIcon fontSize="small" />
           代表
         </Typography>
       </ImageListItem>
@@ -35,7 +35,7 @@ export const RepresentativeList: FC = () => {
           variant="h6"
           sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
         >
-          <ArrowForwardIosIcon />
+          <ArrowForwardIosIcon fontSize="small" />
           副代表
         </Typography>
       </ImageListItem>

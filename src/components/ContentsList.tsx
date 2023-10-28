@@ -18,7 +18,7 @@ export const ContentsList: FC = () => {
           variant="h6"
           sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
         >
-          <ArrowForwardIosIcon />
+          <ArrowForwardIosIcon fontSize="small" />
           お茶
         </Typography>
       </ImageListItem>
@@ -35,7 +35,7 @@ export const ContentsList: FC = () => {
           variant="h6"
           sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
         >
-          <ArrowForwardIosIcon />
+          <ArrowForwardIosIcon fontSize="small" />
           VR
         </Typography>
       </ImageListItem>
@@ -52,7 +52,7 @@ export const ContentsList: FC = () => {
           variant="h6"
           sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
         >
-          <ArrowForwardIosIcon />
+          <ArrowForwardIosIcon fontSize="small" />
           AI
         </Typography>
       </ImageListItem>
