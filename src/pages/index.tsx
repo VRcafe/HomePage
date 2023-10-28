@@ -1,10 +1,12 @@
 import React, { FC } from 'react'
 import { Header } from '../components/Header'
-import { ImageList, ImageListItem, Typography } from '@mui/material'
+import { ImageList, Typography, useMediaQuery } from '@mui/material'
 import { Box } from '@mui/system'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import { ContentsList } from '../components/ContentsList'
+import { RepresentativeList, GroupList } from '../components/IntroductionList'
 
 const IndexPage: FC = () => {
+  const matches: boolean = useMediaQuery('(min-width:600px)')
   return (
     <>
       <Box
@@ -38,59 +40,15 @@ const IndexPage: FC = () => {
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー CONTENTS ー
         </Typography>
-        <ImageList cols={3} gap={20}>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              お茶
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              VR
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              AI
-            </Typography>
-          </ImageListItem>
-        </ImageList>
+        {matches ? (
+          <ImageList cols={3} gap={20}>
+            <ContentsList />
+          </ImageList>
+        ) : (
+          <ImageList cols={1} gap={20}>
+            <ContentsList />
+          </ImageList>
+        )}
       </Box>
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
@@ -104,163 +62,24 @@ const IndexPage: FC = () => {
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー ABOUT US ー
         </Typography>
-        <ImageList cols={2} gap={20}>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              代表
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              副代表
-            </Typography>
-          </ImageListItem>
-        </ImageList>
-        <ImageList cols={4} gap={20}>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              お茶班
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              会計班
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              接客班
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              広報班
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              クラファン班
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              装飾班
-            </Typography>
-          </ImageListItem>
-          <ImageListItem>
-            <img src="images/greentea.png" alt="" />
-            <Typography
-              padding={1}
-              display="inline-flex"
-              position="absolute"
-              bottom={0}
-              right={0}
-              color="white"
-              alignItems="center"
-              variant="h6"
-              sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-            >
-              <ArrowForwardIosIcon />
-              VR班
-            </Typography>
-          </ImageListItem>
-        </ImageList>
+        {matches ? (
+          <ImageList cols={2} gap={20}>
+            <RepresentativeList />
+          </ImageList>
+        ) : (
+          <ImageList cols={1} gap={20}>
+            <RepresentativeList />
+          </ImageList>
+        )}
+        {matches ? (
+          <ImageList cols={4} gap={20}>
+            <GroupList />
+          </ImageList>
+        ) : (
+          <ImageList cols={1} gap={20}>
+            <GroupList />
+          </ImageList>
+        )}
       </Box>
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
