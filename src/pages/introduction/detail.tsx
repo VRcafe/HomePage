@@ -18,6 +18,9 @@ const IntroductionPage: FC = () => {
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー 各班の紹介 ー
         </Typography>
+        <Typography align="center" variant="h6" sx={{ marginBottom: 5 }}>
+          ヴァー茶るカフェでは、総勢40名ものメンバーが7つの班に分かれて活動しています
+        </Typography>
         {matches ? (
           <ImageList cols={2} gap={20}>
             <GroupList />
