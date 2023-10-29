@@ -1,93 +1,105 @@
 import React, { FC } from 'react'
-import { ImageListItem, Typography } from '@mui/material'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
-import { useNavigate } from 'react-router-dom'
+import { Box, Grid, ImageListItem, Typography, useMediaQuery } from '@mui/material'
 
 export const ContentsList: FC = () => {
-  const navigate = useNavigate()
+  const matches: boolean = useMediaQuery('(min-width:600px)')
+  const imgStyle: React.CSSProperties = {
+    width: '30vw',
+    height: '300px',
+    objectFit: 'cover',
+  }
+  const reducedImgStyle: React.CSSProperties = {
+    width: '90vw',
+    height: '300px',
+    objectFit: 'cover',
+  }
   return (
     <>
-      <ImageListItem
-        sx={{
-          ':hover': {
-            transitionTimingFunction: 'ease',
-            transitionDuration: '0.5s',
-            transform: 'scale(1.05, 1.05)',
-            opacity: '0.5',
-          },
-        }}
-        onClick={() => navigate('/contents/greenTea')}
-      >
-        <img src="images/greentea.png" alt="" />
-        <Typography
-          padding={1}
-          display="inline-flex"
-          position="absolute"
-          bottom={0}
-          right={0}
-          color="white"
-          alignItems="center"
-          variant="h6"
-          sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-        >
-          <ArrowForwardIosIcon fontSize="small" />
-          お茶
-        </Typography>
-      </ImageListItem>
-      <ImageListItem
-        sx={{
-          ':hover': {
-            transitionTimingFunction: 'ease',
-            transitionDuration: '0.5s',
-            transform: 'scale(1.05, 1.05)',
-            opacity: '0.5',
-          },
-        }}
-        onClick={() => navigate('/contents/vr')}
-      >
-        <img src="images/greentea.png" alt="" />
-        <Typography
-          padding={1}
-          display="inline-flex"
-          position="absolute"
-          bottom={0}
-          right={0}
-          color="white"
-          alignItems="center"
-          variant="h6"
-          sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-        >
-          <ArrowForwardIosIcon fontSize="small" />
-          VR
-        </Typography>
-      </ImageListItem>
-      <ImageListItem
-        sx={{
-          ':hover': {
-            transitionTimingFunction: 'ease',
-            transitionDuration: '0.5s',
-            transform: 'scale(1.05, 1.05)',
-            opacity: '0.5',
-          },
-        }}
-        onClick={() => navigate('/contents/ai')}
-      >
-        <img src="images/greentea.png" alt="" />
-        <Typography
-          padding={1}
-          display="inline-flex"
-          position="absolute"
-          bottom={0}
-          right={0}
-          color="white"
-          alignItems="center"
-          variant="h6"
-          sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-        >
-          <ArrowForwardIosIcon fontSize="small" />
-          AI
-        </Typography>
-      </ImageListItem>
+      {matches ? (
+        <Grid container justifyContent="space-around" flexWrap="nowrap" columnGap={2}>
+          <ImageListItem>
+            <Box>
+              <img src="images/greentea.png" alt="" style={imgStyle} />
+              <Typography marginTop={2} align="center" variant="h5">
+                お茶
+              </Typography>
+              <Typography align="center" variant="body1">
+                鹿児島県の頴娃茶の1番茶を
+                <br />
+                熟練したメンバーが丁寧に急須で淹れます。
+              </Typography>
+            </Box>
+          </ImageListItem>
+          <ImageListItem>
+            <Box>
+              <img src="images/VR2.jpg" alt="" style={imgStyle} />
+              <Typography marginTop={2} align="center" variant="h5">
+                VR
+              </Typography>
+              <Typography align="center" variant="body1">
+                VRで宇宙空間や花火を楽しみながら
+                <br />
+                お茶を飲むことができます。
+              </Typography>
+            </Box>
+          </ImageListItem>
+          <ImageListItem>
+            <Box>
+              <img src="images/rikyu.jpg" alt="" style={imgStyle} />
+              <Typography marginTop={2} align="center" variant="h5">
+                AI
+              </Typography>
+              <Typography align="center" variant="body1">
+                個性あふれるキャラクターとお話ししながら
+                <br />
+                お茶やお菓子を楽しめます。
+              </Typography>
+            </Box>
+          </ImageListItem>
+        </Grid>
+      ) : (
+        <Grid container justifyContent="space-around" flexWrap="wrap" rowGap={2}>
+          <ImageListItem>
+            <Box>
+              <img src="images/greentea.png" alt="" style={reducedImgStyle} />
+              <Typography marginTop={2} align="center" variant="h5">
+                お茶
+              </Typography>
+              <Typography align="center" variant="body1">
+                鹿児島県の頴娃茶の1番茶を
+                <br />
+                熟練したメンバーが丁寧に急須で淹れます。
+              </Typography>
+            </Box>
+          </ImageListItem>
+          <ImageListItem>
+            <Box>
+              <img src="images/VR2.jpg" alt="" style={reducedImgStyle} />
+              <Typography marginTop={2} align="center" variant="h5">
+                VR
+              </Typography>
+              <Typography align="center" variant="body1">
+                VRで宇宙空間や花火を楽しみながら
+                <br />
+                お茶を飲むことができます。
+              </Typography>
+            </Box>
+          </ImageListItem>
+          <ImageListItem>
+            <Box>
+              <img src="images/rikyu.jpg" alt="" style={reducedImgStyle} />
+              <Typography marginTop={2} align="center" variant="h5">
+                AI
+              </Typography>
+              <Typography align="center" variant="body1">
+                個性あふれるキャラクターとお話ししながら
+                <br />
+                お茶やお菓子を楽しめます。
+              </Typography>
+            </Box>
+          </ImageListItem>
+        </Grid>
+      )}
     </>
   )
 }

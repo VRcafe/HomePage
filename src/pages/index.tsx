@@ -75,7 +75,7 @@ const IndexPage: FC = () => {
         )}
       </Box>
       {/* --- 実績 --- */}
-      <Box component="section">
+      <Box component="section" margin={2}>
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー CASES ー
         </Typography>
