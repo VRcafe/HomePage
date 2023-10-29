@@ -7,7 +7,17 @@ export const RepresentativeList: FC = () => {
   const navigate = useNavigate()
   return (
     <>
-      <ImageListItem onClick={() => navigate('/introduction/representative')}>
+      <ImageListItem
+        sx={{
+          ':hover': {
+            transitionTimingFunction: 'ease',
+            transitionDuration: '0.5s',
+            transform: 'scale(1.05, 1.05)',
+            opacity: '0.5',
+          },
+        }}
+        onClick={() => navigate('/introduction/representative')}
+      >
         <img src="images/greentea.png" alt="" />
         <Typography
           padding={1}
@@ -24,7 +34,17 @@ export const RepresentativeList: FC = () => {
           代表
         </Typography>
       </ImageListItem>
-      <ImageListItem onClick={() => navigate('/introduction/viceRepresentative')}>
+      <ImageListItem
+        sx={{
+          ':hover': {
+            transitionTimingFunction: 'ease',
+            transitionDuration: '0.5s',
+            transform: 'scale(1.05, 1.05)',
+            opacity: '0.5',
+          },
+        }}
+        onClick={() => navigate('/introduction/viceRepresentative')}
+      >
         <img src="images/greentea.png" alt="" />
         <Typography
           padding={1}

@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Header } from '../components/Header'
-import { ImageList, Typography, useMediaQuery } from '@mui/material'
+import { Grid, Typography, useMediaQuery } from '@mui/material'
 import { Box } from '@mui/system'
 import { ContentsList } from '../components/ContentsList'
 import { RepresentativeList } from '../components/IntroductionList'
@@ -60,18 +60,18 @@ const IndexPage: FC = () => {
         </Box>
       </Box>
       {/* --- コンテンツ --- */}
-      <Box component="section">
+      <Box component="section" margin={2}>
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー CONTENTS ー
         </Typography>
         {matches ? (
-          <ImageList cols={3} gap={20}>
+          <Grid container justifyContent="space-around" flexWrap="nowrap" columnGap={2}>
             <ContentsList />
-          </ImageList>
+          </Grid>
         ) : (
-          <ImageList cols={1} gap={20}>
+          <Grid container justifyContent="space-around" flexWrap="wrap" rowGap={2}>
             <ContentsList />
-          </ImageList>
+          </Grid>
         )}
       </Box>
       {/* --- 実績 --- */}
@@ -83,19 +83,19 @@ const IndexPage: FC = () => {
           第76回九大祭
         </Typography>
       </Box>
-      {/* --- メンバー --- */}
-      <Box component="section">
+      {/* --- ABOUT US --- */}
+      <Box component="section" margin={2}>
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー ABOUT US ー
         </Typography>
         {matches ? (
-          <ImageList cols={2} gap={20}>
+          <Grid container justifyContent="space-around" flexWrap="nowrap" columnGap={2}>
             <RepresentativeList />
-          </ImageList>
+          </Grid>
         ) : (
-          <ImageList cols={1} gap={20}>
+          <Grid container flexWrap="wrap" rowGap={2}>
             <RepresentativeList />
-          </ImageList>
+          </Grid>
         )}
       </Box>
       <Box

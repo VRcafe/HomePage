@@ -7,7 +7,17 @@ export const ContentsList: FC = () => {
   const navigate = useNavigate()
   return (
     <>
-      <ImageListItem onClick={() => navigate('/contents/greenTea')}>
+      <ImageListItem
+        sx={{
+          ':hover': {
+            transitionTimingFunction: 'ease',
+            transitionDuration: '0.5s',
+            transform: 'scale(1.05, 1.05)',
+            opacity: '0.5',
+          },
+        }}
+        onClick={() => navigate('/contents/greenTea')}
+      >
         <img src="images/greentea.png" alt="" />
         <Typography
           padding={1}
@@ -24,7 +34,17 @@ export const ContentsList: FC = () => {
           お茶
         </Typography>
       </ImageListItem>
-      <ImageListItem onClick={() => navigate('/contents/vr')}>
+      <ImageListItem
+        sx={{
+          ':hover': {
+            transitionTimingFunction: 'ease',
+            transitionDuration: '0.5s',
+            transform: 'scale(1.05, 1.05)',
+            opacity: '0.5',
+          },
+        }}
+        onClick={() => navigate('/contents/vr')}
+      >
         <img src="images/greentea.png" alt="" />
         <Typography
           padding={1}
@@ -41,7 +61,17 @@ export const ContentsList: FC = () => {
           VR
         </Typography>
       </ImageListItem>
-      <ImageListItem onClick={() => navigate('/contents/ai')}>
+      <ImageListItem
+        sx={{
+          ':hover': {
+            transitionTimingFunction: 'ease',
+            transitionDuration: '0.5s',
+            transform: 'scale(1.05, 1.05)',
+            opacity: '0.5',
+          },
+        }}
+        onClick={() => navigate('/contents/ai')}
+      >
         <img src="images/greentea.png" alt="" />
         <Typography
           padding={1}
