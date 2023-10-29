@@ -1,26 +1,25 @@
-import { Box, Grid, ImageList, Typography, useMediaQuery } from '@mui/material'
+import { Box, ImageList, Typography, useMediaQuery } from '@mui/material'
 import React, { FC } from 'react'
-import { GroupList, RepresentativeList } from '../../components/IntroductionList'
+import { RepresentativeList } from '../../components/ReresentativeList'
+import { GroupList } from '../../components/GroupList'
+import { Header } from '../../components/Header'
 
 const IntroductionPage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:600px)')
   return (
     <>
+      <Header />
       <Box component="section" margin={2}>
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
-          ー ABOUT US ー
+          ー 代表・副代表の紹介 ー
+        </Typography>
+        <RepresentativeList />
+
+        <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
+          ー 各班の紹介 ー
         </Typography>
         {matches ? (
-          <Grid container justifyContent="space-around" flexWrap="nowrap" columnGap={2}>
-            <RepresentativeList />
-          </Grid>
-        ) : (
-          <Grid container flexWrap="wrap" rowGap={2}>
-            <RepresentativeList />
-          </Grid>
-        )}
-        {matches ? (
-          <ImageList cols={4} gap={20}>
+          <ImageList cols={2} gap={20}>
             <GroupList />
           </ImageList>
         ) : (

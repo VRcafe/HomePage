@@ -1,69 +1,6 @@
 import React, { FC } from 'react'
 import { ImageListItem, Typography } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
-import { useNavigate } from 'react-router-dom'
-
-export const RepresentativeList: FC = () => {
-  const navigate = useNavigate()
-  return (
-    <>
-      <ImageListItem
-        sx={{
-          ':hover': {
-            transitionTimingFunction: 'ease',
-            transitionDuration: '0.5s',
-            transform: 'scale(1.05, 1.05)',
-            opacity: '0.5',
-          },
-        }}
-        onClick={() => navigate('/introduction/representative')}
-      >
-        <img src="images/greentea.png" alt="" />
-        <Typography
-          padding={1}
-          display="inline-flex"
-          position="absolute"
-          bottom={0}
-          right={0}
-          color="white"
-          alignItems="center"
-          variant="h6"
-          sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-        >
-          <ArrowForwardIosIcon fontSize="small" />
-          代表
-        </Typography>
-      </ImageListItem>
-      <ImageListItem
-        sx={{
-          ':hover': {
-            transitionTimingFunction: 'ease',
-            transitionDuration: '0.5s',
-            transform: 'scale(1.05, 1.05)',
-            opacity: '0.5',
-          },
-        }}
-        onClick={() => navigate('/introduction/viceRepresentative')}
-      >
-        <img src="images/greentea.png" alt="" />
-        <Typography
-          padding={1}
-          display="inline-flex"
-          position="absolute"
-          bottom={0}
-          right={0}
-          color="white"
-          alignItems="center"
-          variant="h6"
-          sx={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
-        >
-          <ArrowForwardIosIcon fontSize="small" />
-          副代表
-        </Typography>
-      </ImageListItem>
-    </>
-  )
-}
 
 export const GroupList: FC = () => {
   return (

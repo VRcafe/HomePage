@@ -96,7 +96,7 @@ const ViceRepresentativePage: FC = () => {
               C&C (チャレンジアンドクリエイション) 2022 優秀賞
               <br />
               <br />
-              九州大学 アイデア・バトル 2023(1st), 2021(1st, 2nd) 採択者
+              九州大学 アイデア・バトル 2023 (1st), 2021 (1st, 2nd) 採択者
             </Typography>
           </Box>
         </Box>

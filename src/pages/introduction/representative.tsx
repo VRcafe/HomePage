@@ -85,7 +85,7 @@ const RepresentativePage: FC = () => {
               福岡県スタートアップビジコン 2023 優秀賞
               <br />
               <br />
-              九創会 2022（QREC）採択者
+              九創会 2022 (QREC) 採択者
               <br />
               <br />
               C&C 2021 (QREC) 採択者
