@@ -60,21 +60,6 @@ export const Header: FC = () => {
                       transform: 'scale(1.2, 1.2)',
                     },
                   }}
-                  onClick={() => navigate('/contents/greenTea')}
-                >
-                  <Typography align="center" marginBlock={2}>
-                    CONTENTS
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  sx={{
-                    display: 'inline-block',
-                    ':hover': {
-                      transitionTimingFunction: 'ease',
-                      transitionDuration: '0.5s',
-                      transform: 'scale(1.2, 1.2)',
-                    },
-                  }}
                 >
                   <Typography align="center" marginBlock={2} onClick={() => navigate('/introduction')}>
                     ABOUT US
