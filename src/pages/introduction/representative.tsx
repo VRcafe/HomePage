@@ -35,7 +35,7 @@ const RepresentativePage: FC = () => {
                   現在の過度なストレス社会には癒しが必要
                 </Typography>
                 <Typography variant="h6" lineHeight={2}>
-                  こんにちは、ヴァー茶るカフェ代表のもっくん（元谷臣吾）です！
+                  こんにちは、ヴァー茶るカフェ代表のもっくん（元谷 臣吾）です！
                   <br />
                   ヴァー茶るカフェでは、VRと日本茶を組み合わせるることで五感をフルに刺激し、新感覚のリラクゼーション体験を提供しています。
                   <br />
@@ -91,10 +91,10 @@ const RepresentativePage: FC = () => {
               C&C 2021 (QREC) 採択者
               <br />
               <br />
-              西日本音楽大会 アカペラブロッサム 第一位
+              西日本音楽大会 アカペラブロッサム 第1位
             </Typography>
             <Typography lineHeight="20px" marginLeft="auto">
-              アーチェリー 福岡大会 第二位, 九州大会 第三位
+              アーチェリー 福岡大会 第2位, 九州大会 3位
               <br />
               <br />
               FDD (Focus Dancers Dream) 公認ピアニスト
