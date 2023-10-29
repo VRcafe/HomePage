@@ -6,8 +6,10 @@ import { ContentsList } from '../components/ContentsList'
 import { RepresentativeList, GroupList } from '../components/IntroductionList'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
+import { useNavigate } from 'react-router-dom'
 
 const IndexPage: FC = () => {
+  const navigate = useNavigate()
   const matches: boolean = useMediaQuery('(min-width:600px)')
   return (
     <>
@@ -49,15 +51,10 @@ const IndexPage: FC = () => {
           marginRight="auto"
           color="white"
           sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
+          onClick={() => navigate('/missions')}
         >
           <ArrowForwardIosIcon fontSize="small" />
-          <Typography
-            marginLeft="auto"
-            marginRight="auto"
-            variant="h6"
-            color="white"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          >
+          <Typography marginLeft="auto" marginRight="auto" variant="h6" color="white">
             view more
           </Typography>
         </Box>
@@ -109,6 +106,24 @@ const IndexPage: FC = () => {
             <GroupList />
           </ImageList>
         )}
+      </Box>
+      <Box
+        alignItems="center"
+        justifyItems="center"
+        display="flex"
+        width="30vw"
+        padding={2}
+        marginTop={5}
+        marginLeft="auto"
+        marginRight="auto"
+        color="white"
+        sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
+        onClick={() => navigate('/introduction')}
+      >
+        <ArrowForwardIosIcon fontSize="small" />
+        <Typography marginLeft="auto" marginRight="auto" variant="h6" color="white">
+          view more
+        </Typography>
       </Box>
       {/* --- ブログ --- */}
       <Box component="section">

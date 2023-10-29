@@ -1,11 +1,13 @@
 import React, { FC } from 'react'
 import { ImageListItem, Typography } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import { useNavigate } from 'react-router-dom'
 
 export const RepresentativeList: FC = () => {
+  const navigate = useNavigate()
   return (
     <>
-      <ImageListItem>
+      <ImageListItem onClick={() => navigate('/introduction/representative')}>
         <img src="images/greentea.png" alt="" />
         <Typography
           padding={1}
@@ -22,7 +24,7 @@ export const RepresentativeList: FC = () => {
           代表
         </Typography>
       </ImageListItem>
-      <ImageListItem>
+      <ImageListItem onClick={() => navigate('/introduction/viceRepresentative')}>
         <img src="images/greentea.png" alt="" />
         <Typography
           padding={1}
