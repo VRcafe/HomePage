@@ -3,7 +3,7 @@ import { Header } from '../components/Header'
 import { ImageList, Typography, useMediaQuery } from '@mui/material'
 import { Box } from '@mui/system'
 import { ContentsList } from '../components/ContentsList'
-import { RepresentativeList, GroupList } from '../components/IntroductionList'
+import { RepresentativeList } from '../components/IntroductionList'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
 import { useNavigate } from 'react-router-dom'
@@ -95,15 +95,6 @@ const IndexPage: FC = () => {
         ) : (
           <ImageList cols={1} gap={20}>
             <RepresentativeList />
-          </ImageList>
-        )}
-        {matches ? (
-          <ImageList cols={4} gap={20}>
-            <GroupList />
-          </ImageList>
-        ) : (
-          <ImageList cols={1} gap={20}>
-            <GroupList />
           </ImageList>
         )}
       </Box>
