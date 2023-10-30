@@ -7,6 +7,7 @@ import { RepresentativeList } from '../components/ReresentativeList'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp'
 import { useNavigate } from 'react-router-dom'
+import '../style.css'
 
 const IndexPage: FC = () => {
   const navigate = useNavigate()
@@ -24,12 +25,18 @@ const IndexPage: FC = () => {
       >
         <Header />
 
-        <Typography width="30%" variant="h5" style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}>
+        <Typography
+          fontFamily="Shippori Mincho B1"
+          width="30%"
+          variant="h5"
+          style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}
+        >
           {'お茶と、'}
           <br />
           {'　　VRと、'}
           <br />
           {'　　　　AIと。'}
+          <br />
         </Typography>
       </Box>
       {/* --- 使命 --- */}
