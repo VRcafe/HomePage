@@ -67,7 +67,7 @@ const IndexPage: FC = () => {
           marginRight="auto"
           color="white"
           sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
-          onClick={() => navigate('/menu')}
+          onClick={() => navigate('/HomePages/menu')}
         >
           <ArrowForwardIosIcon fontSize="small" />
           <Typography marginLeft="auto" marginRight="auto" variant="body1" color="white">
@@ -132,7 +132,7 @@ const IndexPage: FC = () => {
         marginRight="auto"
         color="white"
         sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
-        onClick={() => navigate('/introduction')}
+        onClick={() => navigate('/HomePage/introduction')}
       >
         <ArrowForwardIosIcon fontSize="small" />
         <Typography marginLeft="auto" marginRight="auto" variant="body1" color="white">
