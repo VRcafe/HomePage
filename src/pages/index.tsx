@@ -35,10 +35,14 @@ const IndexPage: FC = () => {
       {/* --- 使命 --- */}
       <Box component="section">
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
-          ー OUR MISSIONS ー
+          ー 新感覚エンターテイメント日本茶カフェ ー
         </Typography>
         <Typography align="center" variant="h6">
-          アナログとデジタルの有効的融合で人々の暮らしや感性を豊かにする
+          アナログとデジタルの有効的融合で人々の暮らしや感性を豊かにすることを使命に、
+          <br />
+          VR・AI技術とお茶を組み合わせて五感をフルに刺激して新感覚の癒しを提供する日本茶カフェです。
+          <br />
+          11月4日（土）・5日（日）に開催される第76回九州大学の大学祭「九大祭」にて、お待ちしています！
         </Typography>
         <Box
           alignItems="center"
@@ -55,7 +59,7 @@ const IndexPage: FC = () => {
         >
           <ArrowForwardIosIcon fontSize="small" />
           <Typography marginLeft="auto" marginRight="auto" variant="h6" color="white">
-            view more
+            MENU
           </Typography>
         </Box>
       </Box>
@@ -64,15 +68,7 @@ const IndexPage: FC = () => {
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー CONTENTS ー
         </Typography>
-        {matches ? (
-          <Grid container justifyContent="space-around" flexWrap="nowrap" columnGap={2}>
-            <ContentsList />
-          </Grid>
-        ) : (
-          <Grid container justifyContent="space-around" flexWrap="wrap" rowGap={2}>
-            <ContentsList />
-          </Grid>
-        )}
+        <ContentsList />
       </Box>
       {/* --- 実績 --- */}
       <Box component="section" margin={2}>
