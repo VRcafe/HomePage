@@ -7,10 +7,12 @@ import MenuPage from './pages/menu/detail'
 import RepresentativePage from './pages/introduction/representative'
 import ViceRepresentativePage from './pages/introduction/viceRepresentative'
 import IntroductionPage from './pages/introduction/detail'
+import ScrollToTop from './components/ScrollToTop'
 
 const Pages = () => {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<IndexPage />} />
         <Route path="/menu" element={<MenuPage />} />

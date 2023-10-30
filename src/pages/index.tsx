@@ -135,6 +135,9 @@ const IndexPage: FC = () => {
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー ONLINE SHOP ー
         </Typography>
+        <Typography align="center" variant="h6">
+          Coming soon...
+        </Typography>
       </Box>
       <Box
         alignItems="center"
