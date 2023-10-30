@@ -42,7 +42,7 @@ export const Header: FC = () => {
                     transform: 'scale(1.2, 1.2)',
                   },
                 }}
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/HomePage/')}
               >
                 <Typography fontFamily="Shippori Mincho B1" align="center" marginBlock={2} variant="h6">
                   ホーム
@@ -57,7 +57,7 @@ export const Header: FC = () => {
                     transform: 'scale(1.2, 1.2)',
                   },
                 }}
-                onClick={() => navigate('/menu')}
+                onClick={() => navigate('/HomePage/menu')}
               >
                 <Typography fontFamily="Shippori Mincho B1" align="center" marginBlock={2} variant="h6">
                   メニュー
@@ -78,7 +78,7 @@ export const Header: FC = () => {
                   align="center"
                   marginBlock={2}
                   variant="h6"
-                  onClick={() => navigate('/introduction')}
+                  onClick={() => navigate('/HomePage/introduction')}
                 >
                   私たちについて
                 </Typography>
