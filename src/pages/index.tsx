@@ -158,7 +158,7 @@ const IndexPage: FC = () => {
             />
           </a>
           <a href="https://twitter.com/_virtualcafe">
-            <img src="/images/logo-black.png" alt="" style={{ width: '50px' }} />
+            <img src="images/logo-black.png" alt="" style={{ width: '50px' }} />
           </a>
         </Box>
       </Box>

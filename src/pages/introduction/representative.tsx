@@ -21,12 +21,12 @@ const RepresentativePage: FC = () => {
             backgroundSize: 'cover',
           }}
         >
-          <img src="/images/mokkun_front.jpg" alt="" style={{ width: '100%' }} />
+          <img src="images/mokkun_front.jpg" alt="" style={{ width: '100%' }} />
         </Box>
         <Box margin={5}>
           {matches ? (
             <Box display="flex" gap={3}>
-              <img src="/images/mokkun_side.jpg" alt="" style={{ width: '50%', flexShrink: 0 }} />
+              <img src="images/mokkun_side.jpg" alt="" style={{ width: '50%', flexShrink: 0 }} />
               <Box width="50%" flexShrink={0}>
                 <Typography
                   variant="h5"
@@ -48,7 +48,7 @@ const RepresentativePage: FC = () => {
             </Box>
           ) : (
             <Box flexDirection="column">
-              <img src="/images/mokkun_side.jpg" alt="" style={{ width: '100%', flexShrink: 0 }} />
+              <img src="images/mokkun_side.jpg" alt="" style={{ width: '100%', flexShrink: 0 }} />
               <Box width="100%" flexShrink={0}>
                 <Typography
                   variant="h5"

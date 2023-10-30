@@ -22,7 +22,7 @@ export const RepresentativeList: FC = () => {
             }}
             onClick={() => navigate('/HomePage/introduction/representative')}
           >
-            <img src="/images/mokkun_front.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+            <img src="images/mokkun_front.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
               padding={1}
               display="inline-flex"
@@ -81,7 +81,7 @@ export const RepresentativeList: FC = () => {
             }}
             onClick={() => navigate('/HomePage/introduction/representative')}
           >
-            <img src="/images/mokkun_front.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+            <img src="images/mokkun_front.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
               padding={1}
               display="inline-flex"

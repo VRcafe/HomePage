@@ -33,7 +33,7 @@ export const ContentsList: FC = () => {
           </ImageListItem>
           <ImageListItem>
             <Box>
-              <img src="images/VR2.jpg" alt="" style={imgStyle} />
+              <img src="images/vr2.jpg" alt="" style={imgStyle} />
               <Typography fontFamily="Shippori Mincho B1" marginTop={2} align="center" variant="h5">
                 VR
               </Typography>
@@ -75,7 +75,7 @@ export const ContentsList: FC = () => {
           </ImageListItem>
           <ImageListItem>
             <Box>
-              <img src="images/VR2.jpg" alt="" style={reducedImgStyle} />
+              <img src="images/vr2.jpg" alt="" style={reducedImgStyle} />
               <Typography marginTop={2} align="center" variant="h5">
                 VR
               </Typography>

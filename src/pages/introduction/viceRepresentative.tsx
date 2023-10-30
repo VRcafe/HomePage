@@ -20,13 +20,13 @@ const ViceRepresentativePage: FC = () => {
             backgroundSize: 'cover',
           }}
         >
-          <img src="/images/kato.jpg" alt="" style={{ width: '100%', height: '800px', objectFit: 'cover' }} />
+          <img src="images/kato.jpg" alt="" style={{ width: '100%', height: '800px', objectFit: 'cover' }} />
         </Box>
         <Box margin={5}>
           {matches ? (
             <Box display="flex" gap={3}>
               <img
-                src="/images/kato2.jpg"
+                src="images/kato2.jpg"
                 alt=""
                 style={{ width: '50%', height: '600px', objectFit: 'cover', flexShrink: 0 }}
               />
@@ -53,7 +53,7 @@ const ViceRepresentativePage: FC = () => {
             </Box>
           ) : (
             <Box flexDirection="column">
-              <img src="/images/kato2.jpg" alt="" style={{ width: '100%', flexShrink: 0 }} />
+              <img src="images/kato2.jpg" alt="" style={{ width: '100%', flexShrink: 0 }} />
               <Box width="100%" flexShrink={0}>
                 <Typography
                   variant="h5"
