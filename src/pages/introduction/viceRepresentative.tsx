@@ -6,7 +6,7 @@ const ViceRepresentativePage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:1000px)')
   return (
     <>
-      <Box margin={5}>
+      <Box>
         <Header />
         <Typography align="center" variant="h4" fontWeight="bold">
           ー 副代表紹介 ー
@@ -14,8 +14,7 @@ const ViceRepresentativePage: FC = () => {
         <Box
           sx={{
             textAlign: 'center',
-            marginTop: 10,
-            marginBottom: 10,
+            margin: 5,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -23,7 +22,7 @@ const ViceRepresentativePage: FC = () => {
         >
           <img src="/images/kato.jpg" alt="" style={{ width: '100%', height: '800px', objectFit: 'cover' }} />
         </Box>
-        <Box>
+        <Box margin={5}>
           {matches ? (
             <Box display="flex" gap={3}>
               <img
@@ -58,9 +57,9 @@ const ViceRepresentativePage: FC = () => {
               <Box width="100%" flexShrink={0}>
                 <Typography
                   variant="h5"
-                  marginTop={10}
+                  marginTop={5}
                   marginBottom={2}
-                  style={{ textDecorationLine: 'underline', textUnderlineOffset: '10px' }}
+                  style={{ textDecorationLine: 'underline', textUnderlineOffset: '5px' }}
                 >
                   お茶の秘めた可能性を引き出したい
                 </Typography>
@@ -79,7 +78,7 @@ const ViceRepresentativePage: FC = () => {
             </Box>
           )}
         </Box>
-        <Box marginTop={10} padding={10} bgcolor={'#f0e4bc'}>
+        <Box margin={5} padding={10} bgcolor={'#f0e4bc'}>
           <Typography
             variant="body1"
             style={{ textDecorationLine: 'underline', textUnderlineOffset: '10px', marginBottom: 20 }}

@@ -1,21 +1,21 @@
 import { Box, Typography, useMediaQuery } from '@mui/material'
 import React, { FC } from 'react'
 import { Header } from '../../components/Header'
+import '../../style.css'
 
 const RepresentativePage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:1000px)')
   return (
     <>
-      <Box margin={5}>
+      <Box>
         <Header />
-        <Typography align="center" variant="h4" fontWeight="bold">
-          ー 代表紹介 ー
+        <Typography fontFamily="Shippori Mincho B1" align="center" variant="h4" fontWeight="bold">
+          代表紹介
         </Typography>
         <Box
           sx={{
             textAlign: 'center',
-            marginTop: 10,
-            marginBottom: 10,
+            margin: 5,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -23,7 +23,7 @@ const RepresentativePage: FC = () => {
         >
           <img src="/images/mokkun_front.jpg" alt="" style={{ width: '100%' }} />
         </Box>
-        <Box>
+        <Box margin={5}>
           {matches ? (
             <Box display="flex" gap={3}>
               <img src="/images/mokkun_side.jpg" alt="" style={{ width: '50%', flexShrink: 0 }} />
@@ -52,9 +52,9 @@ const RepresentativePage: FC = () => {
               <Box width="100%" flexShrink={0}>
                 <Typography
                   variant="h5"
-                  marginTop={10}
+                  marginTop={5}
                   marginBottom={2}
-                  style={{ textDecorationLine: 'underline', textUnderlineOffset: '10px' }}
+                  style={{ textDecorationLine: 'underline', textUnderlineOffset: '5px' }}
                 >
                   現在の過度なストレス社会には癒しが必要
                 </Typography>
@@ -71,7 +71,7 @@ const RepresentativePage: FC = () => {
             </Box>
           )}
         </Box>
-        <Box marginTop={10} padding={10} bgcolor={'#f0e4bc'}>
+        <Box margin={5} padding={10} bgcolor={'#f0e4bc'}>
           <Typography
             variant="body1"
             style={{ textDecorationLine: 'underline', textUnderlineOffset: '10px', marginBottom: 20 }}

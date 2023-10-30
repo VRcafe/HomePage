@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { Box, Grid, ImageListItem, Typography, useMediaQuery } from '@mui/material'
+import '../style.css'
 
 export const ContentsList: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:600px)')
@@ -18,9 +19,9 @@ export const ContentsList: FC = () => {
       {matches ? (
         <Grid container justifyContent="space-around" flexWrap="nowrap" columnGap={2}>
           <ImageListItem>
-            <Box>
+            <Box display="inline-flex">
               <img src="images/greentea.png" alt="" style={imgStyle} />
-              <Typography marginTop={2} align="center" variant="h5">
+              <Typography fontFamily="Shippori Mincho B1" marginTop={2} align="center" variant="h5">
                 お茶
               </Typography>
               <Typography align="center" variant="body1">
@@ -33,7 +34,7 @@ export const ContentsList: FC = () => {
           <ImageListItem>
             <Box>
               <img src="images/VR2.jpg" alt="" style={imgStyle} />
-              <Typography marginTop={2} align="center" variant="h5">
+              <Typography fontFamily="Shippori Mincho B1" marginTop={2} align="center" variant="h5">
                 VR
               </Typography>
               <Typography align="center" variant="body1">
@@ -46,7 +47,7 @@ export const ContentsList: FC = () => {
           <ImageListItem>
             <Box>
               <img src="images/rikyu.jpg" alt="" style={imgStyle} />
-              <Typography marginTop={2} align="center" variant="h5">
+              <Typography fontFamily="Shippori Mincho B1" marginTop={2} align="center" variant="h5">
                 AI
               </Typography>
               <Typography align="center" variant="body1">

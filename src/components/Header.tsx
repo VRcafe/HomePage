@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, Drawer, Button, List, ListItem } from '@mu
 import MenuIcon from '@mui/icons-material/Menu'
 import { useNavigate } from 'react-router-dom'
 import CloseIcon from '@mui/icons-material/Close'
+import '../style.css'
 
 export const Header: FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -43,8 +44,8 @@ export const Header: FC = () => {
                 }}
                 onClick={() => navigate('/')}
               >
-                <Typography align="center" marginBlock={2} variant="h6">
-                  HOME
+                <Typography fontFamily="Shippori Mincho B1" align="center" marginBlock={2} variant="h6">
+                  ホーム
                 </Typography>
               </ListItem>
               <ListItem
@@ -58,8 +59,8 @@ export const Header: FC = () => {
                 }}
                 onClick={() => navigate('/menu')}
               >
-                <Typography align="center" marginBlock={2} variant="h6">
-                  MENU
+                <Typography fontFamily="Shippori Mincho B1" align="center" marginBlock={2} variant="h6">
+                  メニュー
                 </Typography>
               </ListItem>
               <ListItem
@@ -72,8 +73,14 @@ export const Header: FC = () => {
                   },
                 }}
               >
-                <Typography align="center" marginBlock={2} variant="h6" onClick={() => navigate('/introduction')}>
-                  ABOUT US
+                <Typography
+                  fontFamily="Shippori Mincho B1"
+                  align="center"
+                  marginBlock={2}
+                  variant="h6"
+                  onClick={() => navigate('/introduction')}
+                >
+                  私たちについて
                 </Typography>
               </ListItem>
             </List>

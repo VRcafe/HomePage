@@ -2,14 +2,15 @@ import { Grid, ImageListItem, Typography, useMediaQuery } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { FC } from 'react'
 import { Header } from '../../components/Header'
+import '../../style.css'
 
 const MenuPage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:1000px)')
   return (
     <>
       <Header />
-      <Typography align="center" variant="h4" fontWeight="bold">
-        ー MENU ー
+      <Typography fontFamily="Shippori Mincho B1" align="center" variant="h4" fontWeight="bold">
+        メニュー
       </Typography>
       <Box margin={5} flexDirection="column">
         {matches ? (

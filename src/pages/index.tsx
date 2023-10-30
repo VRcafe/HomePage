@@ -41,8 +41,13 @@ const IndexPage: FC = () => {
       </Box>
       {/* --- 使命 --- */}
       <Box component="section" margin={2}>
-        <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
-          ー 新感覚エンターテイメント日本茶カフェ ー
+        <Typography
+          fontFamily="Shippori Mincho B1"
+          align="center"
+          variant="h4"
+          sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}
+        >
+          新感覚エンターテイメント日本茶カフェ
         </Typography>
         <Typography align="center" variant="h6">
           アナログとデジタルの有効的融合で人々の暮らしや感性を豊かにすることを使命に、
@@ -72,15 +77,25 @@ const IndexPage: FC = () => {
       </Box>
       {/* --- コンテンツ --- */}
       <Box component="section" margin={2}>
-        <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
-          ー CONTENTS ー
+        <Typography
+          fontFamily="Shippori Mincho B1"
+          align="center"
+          variant="h4"
+          sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}
+        >
+          コンテンツ
         </Typography>
         <ContentsList />
       </Box>
       {/* --- 実績 --- */}
       <Box component="section" margin={2}>
-        <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
-          ー CASES ー
+        <Typography
+          fontFamily="Shippori Mincho B1"
+          align="center"
+          variant="h4"
+          sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}
+        >
+          実績
         </Typography>
         <Typography align="center" variant="h6">
           第76回九大祭
@@ -88,8 +103,13 @@ const IndexPage: FC = () => {
       </Box>
       {/* --- ABOUT US --- */}
       <Box component="section" margin={2}>
-        <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
-          ー ABOUT US ー
+        <Typography
+          fontFamily="Shippori Mincho B1"
+          align="center"
+          variant="h4"
+          sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}
+        >
+          私たちについて
         </Typography>
         {matches ? (
           <Grid container justifyContent="space-around" flexWrap="nowrap" columnGap={2}>
@@ -121,8 +141,13 @@ const IndexPage: FC = () => {
       </Box>
       {/* --- ブログ --- */}
       <Box component="section">
-        <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
-          ー BLOG ー
+        <Typography
+          fontFamily="Shippori Mincho B1"
+          align="center"
+          variant="h4"
+          sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}
+        >
+          ブログ
         </Typography>
         <Box textAlign="center">
           <a href="https://www.instagram.com/virtualcafe_0508/">
@@ -139,8 +164,13 @@ const IndexPage: FC = () => {
       </Box>
       {/* --- オンラインショップ --- */}
       <Box component="section">
-        <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
-          ー ONLINE SHOP ー
+        <Typography
+          fontFamily="Shippori Mincho B1"
+          align="center"
+          variant="h4"
+          sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}
+        >
+          オンラインショップ
         </Typography>
         <Typography align="center" variant="h6">
           Coming soon...
