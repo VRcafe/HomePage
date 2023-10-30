@@ -15,7 +15,7 @@ const IndexPage: FC = () => {
     <>
       <Box
         sx={{
-          width: '100vw',
+          width: '100%',
           backgroundImage: 'url(/images/flower-back1042.jpg)',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -24,7 +24,7 @@ const IndexPage: FC = () => {
       >
         <Header />
 
-        <Typography width="30vw" variant="h4" style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}>
+        <Typography width="30%" variant="h5" style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}>
           {'お茶と、'}
           <br />
           {'　　VRと、'}
@@ -33,7 +33,7 @@ const IndexPage: FC = () => {
         </Typography>
       </Box>
       {/* --- 使命 --- */}
-      <Box component="section">
+      <Box component="section" margin={2}>
         <Typography align="center" variant="h4" sx={{ marginTop: 10, marginBottom: 5, fontWeight: 'bold' }}>
           ー 新感覚エンターテイメント日本茶カフェ ー
         </Typography>
@@ -55,7 +55,7 @@ const IndexPage: FC = () => {
           marginRight="auto"
           color="white"
           sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
-          onClick={() => navigate('/missions')}
+          onClick={() => navigate('/menu')}
         >
           <ArrowForwardIosIcon fontSize="small" />
           <Typography marginLeft="auto" marginRight="auto" variant="h6" color="white">

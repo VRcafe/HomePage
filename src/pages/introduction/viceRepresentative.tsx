@@ -6,15 +6,16 @@ const ViceRepresentativePage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:1000px)')
   return (
     <>
-      <Box>
+      <Box margin={5}>
         <Header />
-        <Typography align="center" variant="h4">
-          副代表紹介
+        <Typography align="center" variant="h4" fontWeight="bold">
+          ー 副代表紹介 ー
         </Typography>
         <Box
           sx={{
             textAlign: 'center',
-            margin: 10,
+            marginTop: 10,
+            marginBottom: 10,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -22,7 +23,7 @@ const ViceRepresentativePage: FC = () => {
         >
           <img src="/images/kato.jpg" alt="" style={{ width: '100%', height: '800px', objectFit: 'cover' }} />
         </Box>
-        <Box margin={10}>
+        <Box>
           {matches ? (
             <Box display="flex" gap={3}>
               <img
@@ -78,7 +79,7 @@ const ViceRepresentativePage: FC = () => {
             </Box>
           )}
         </Box>
-        <Box margin={10} padding={10} bgcolor={'#f0e4bc'}>
+        <Box marginTop={10} padding={10} bgcolor={'#f0e4bc'}>
           <Typography
             variant="body1"
             style={{ textDecorationLine: 'underline', textUnderlineOffset: '10px', marginBottom: 20 }}
