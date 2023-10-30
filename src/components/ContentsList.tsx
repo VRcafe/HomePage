@@ -19,7 +19,7 @@ export const ContentsList: FC = () => {
       {matches ? (
         <Grid container justifyContent="space-around" flexWrap="nowrap" columnGap={2}>
           <ImageListItem>
-            <Box display="inline-flex">
+            <Box>
               <img src="images/greentea.png" alt="" style={imgStyle} />
               <Typography fontFamily="Shippori Mincho B1" marginTop={2} align="center" variant="h5">
                 お茶

@@ -70,8 +70,8 @@ const IndexPage: FC = () => {
           onClick={() => navigate('/menu')}
         >
           <ArrowForwardIosIcon fontSize="small" />
-          <Typography marginLeft="auto" marginRight="auto" variant="h6" color="white">
-            MENU
+          <Typography marginLeft="auto" marginRight="auto" variant="body1" color="white">
+            メニュー
           </Typography>
         </Box>
       </Box>
@@ -135,8 +135,8 @@ const IndexPage: FC = () => {
         onClick={() => navigate('/introduction')}
       >
         <ArrowForwardIosIcon fontSize="small" />
-        <Typography marginLeft="auto" marginRight="auto" variant="h6" color="white">
-          view more
+        <Typography marginLeft="auto" marginRight="auto" variant="body1" color="white">
+          もっと見る
         </Typography>
       </Box>
       {/* --- ブログ --- */}
@@ -191,8 +191,8 @@ const IndexPage: FC = () => {
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
         <KeyboardDoubleArrowUpIcon fontSize="small" />
-        <Typography marginLeft="auto" marginRight="auto" align="center" variant="h6" color="white">
-          top
+        <Typography marginLeft="auto" marginRight="auto" align="center" variant="body1" color="white">
+          トップへ
         </Typography>
       </Box>
     </>
