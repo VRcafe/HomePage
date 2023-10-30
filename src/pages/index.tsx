@@ -17,7 +17,7 @@ const IndexPage: FC = () => {
       <Box
         sx={{
           width: '100%',
-          backgroundImage: 'url(/images/flower-back1042.jpg)',
+          backgroundImage: 'url(images/flower-back1042.jpg)',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
@@ -67,7 +67,7 @@ const IndexPage: FC = () => {
           marginRight="auto"
           color="white"
           sx={{ background: '#627b54', ':hover': { backgroundColor: '#485A3E' } }}
-          onClick={() => navigate('/HomePages/menu')}
+          onClick={() => navigate('/HomePage/menu')}
         >
           <ArrowForwardIosIcon fontSize="small" />
           <Typography marginLeft="auto" marginRight="auto" variant="body1" color="white">
