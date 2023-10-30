@@ -1,6 +1,6 @@
 {
-  "name": "vr-cafe-homepage",
-  "homepage": "https://toshiki31.github.io/vr-cafe-homepage/",
+  "name": "homepage",
+  "homepage": "https://vrcafe.github.io/HomePage/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
