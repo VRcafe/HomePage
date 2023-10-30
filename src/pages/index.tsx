@@ -98,7 +98,7 @@ const IndexPage: FC = () => {
           実績
         </Typography>
         <Typography align="center" variant="h6">
-          第76回九大祭
+          第76回九大祭出店
         </Typography>
       </Box>
       {/* --- ABOUT US --- */}
