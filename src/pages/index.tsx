@@ -27,7 +27,7 @@ const IndexPage: FC = () => {
 
         <Typography
           fontFamily="Shippori Mincho B1"
-          width="30%"
+          width="40%"
           variant="h5"
           style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}
         >
@@ -153,6 +153,7 @@ const IndexPage: FC = () => {
         width="20vw"
         padding={2}
         marginLeft="auto"
+        marginTop={5}
         marginBottom={5}
         marginRight={2}
         color="white"
@@ -161,7 +162,7 @@ const IndexPage: FC = () => {
       >
         <KeyboardDoubleArrowUpIcon fontSize="small" />
         <Typography marginLeft="auto" marginRight="auto" align="center" variant="h6" color="white">
-          back to top
+          top
         </Typography>
       </Box>
     </>
