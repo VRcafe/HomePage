@@ -14,12 +14,12 @@ const Pages = () => {
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/HomePage" element={<IndexPage />} />
-        <Route path="/HomePage/menu" element={<MenuPage />} />
-        <Route path="/HomePage/cases" element />
-        <Route path="/HomePage/representative" element={<RepresentativePage />} />
-        <Route path="/HomePage/viceRepresentative" element={<ViceRepresentativePage />} />
-        <Route path="/HomePage/introduction" element={<IntroductionPage />} />
+        <Route path="/HomePage/#/" element={<IndexPage />} />
+        <Route path="/HomePage/#/menu" element={<MenuPage />} />
+        <Route path="/HomePage/#/cases" element />
+        <Route path="/HomePage/#/representative" element={<RepresentativePage />} />
+        <Route path="/HomePage/#/viceRepresentative" element={<ViceRepresentativePage />} />
+        <Route path="/HomePage/#/introduction" element={<IntroductionPage />} />
       </Routes>
     </>
   )
