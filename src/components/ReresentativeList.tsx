@@ -20,9 +20,9 @@ export const RepresentativeList: FC = () => {
                 opacity: '0.5',
               },
             }}
-            onClick={() => navigate('/HomePage/introduction/representative')}
+            onClick={() => navigate('/HomePage/representative')}
           >
-            <img src="images/mokkun_front.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+            <img src="images/mokkun_1.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
               padding={1}
               display="inline-flex"
@@ -48,9 +48,9 @@ export const RepresentativeList: FC = () => {
                 opacity: '0.5',
               },
             }}
-            onClick={() => navigate('/HomePage/introduction/viceRepresentative')}
+            onClick={() => navigate('/HomePage/viceRepresentative')}
           >
-            <img src="images/kato.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+            <img src="images/kato_1.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
               padding={1}
               display="inline-flex"
@@ -79,9 +79,9 @@ export const RepresentativeList: FC = () => {
                 opacity: '0.5',
               },
             }}
-            onClick={() => navigate('/HomePage/introduction/representative')}
+            onClick={() => navigate('/HomePage/representative')}
           >
-            <img src="images/mokkun_front.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+            <img src="images/mokkun_1.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
               padding={1}
               display="inline-flex"
@@ -107,9 +107,9 @@ export const RepresentativeList: FC = () => {
                 opacity: '0.5',
               },
             }}
-            onClick={() => navigate('/HomePage/introduction/viceRepresentative')}
+            onClick={() => navigate('/HomePage/viceRepresentative')}
           >
-            <img src="images/kato.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+            <img src="images/kato_1.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
               padding={1}
               display="inline-flex"

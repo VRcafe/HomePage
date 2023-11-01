@@ -12,7 +12,7 @@ export const Header: FC = () => {
     <>
       <AppBar position="static" style={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
         <Toolbar>
-          <img src="images/logo.png" height={100} width={100} alt="" onClick={() => navigate('/HomePage/')} />
+          <img src="images/logo.png" height="100px" width="100px" alt="" onClick={() => navigate('/HomePage/')} />
           <Typography color="black" component="label" ml={1} sx={{ flexGrow: 1 }} variant="h6"></Typography>
           <Button onClick={() => setIsDrawerOpen(true)}>
             <MenuIcon fontSize="large" sx={{ color: 'black' }} />

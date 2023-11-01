@@ -1,4 +1,4 @@
-import { Box, Typography, useMediaQuery } from '@mui/material'
+import { Box, ImageListItem, Typography, useMediaQuery } from '@mui/material'
 import React, { FC } from 'react'
 import { Header } from '../../components/Header'
 
@@ -6,27 +6,24 @@ const ViceRepresentativePage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:1000px)')
   return (
     <>
+      <Header />
       <Box>
-        <Header />
         <Typography align="center" variant="h4" fontWeight="bold">
           ー 副代表紹介 ー
         </Typography>
-        <Box
+        <ImageListItem
           sx={{
             textAlign: 'center',
             margin: 5,
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
           }}
         >
-          <img src="images/kato.jpg" alt="" style={{ width: '100%', height: '800px', objectFit: 'cover' }} />
-        </Box>
+          <img src="images/kato_1.jpg" alt="" style={{ width: '100%', height: '800px', objectFit: 'cover' }} />
+        </ImageListItem>
         <Box margin={5}>
           {matches ? (
             <Box display="flex" gap={3}>
               <img
-                src="images/kato2.jpg"
+                src="images/kato_2.jpg"
                 alt=""
                 style={{ width: '50%', height: '600px', objectFit: 'cover', flexShrink: 0 }}
               />
@@ -53,7 +50,7 @@ const ViceRepresentativePage: FC = () => {
             </Box>
           ) : (
             <Box flexDirection="column">
-              <img src="images/kato2.jpg" alt="" style={{ width: '100%', flexShrink: 0 }} />
+              <img src="images/kato_2.jpg" alt="" style={{ width: '100%', flexShrink: 0 }} />
               <Box width="100%" flexShrink={0}>
                 <Typography
                   variant="h5"

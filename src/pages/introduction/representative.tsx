@@ -1,4 +1,4 @@
-import { Box, Typography, useMediaQuery } from '@mui/material'
+import { Box, ImageListItem, Typography, useMediaQuery } from '@mui/material'
 import React, { FC } from 'react'
 import { Header } from '../../components/Header'
 import '../../style.css'
@@ -7,26 +7,23 @@ const RepresentativePage: FC = () => {
   const matches: boolean = useMediaQuery('(min-width:1000px)')
   return (
     <>
+      <Header />
       <Box>
-        <Header />
         <Typography fontFamily="Shippori Mincho B1" align="center" variant="h4" fontWeight="bold">
           代表紹介
         </Typography>
-        <Box
+        <ImageListItem
           sx={{
             textAlign: 'center',
             margin: 5,
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
           }}
         >
-          <img src="images/mokkun_front.jpg" alt="" style={{ width: '100%' }} />
-        </Box>
+          <img src="images/mokkun_1.jpg" alt="" style={{ width: '100%' }} />
+        </ImageListItem>
         <Box margin={5}>
           {matches ? (
             <Box display="flex" gap={3}>
-              <img src="images/mokkun_side.jpg" alt="" style={{ width: '50%', flexShrink: 0 }} />
+              <img src="images/mokkun_2.jpg" alt="" style={{ width: '50%' }} />
               <Box width="50%" flexShrink={0}>
                 <Typography
                   variant="h5"
@@ -48,7 +45,9 @@ const RepresentativePage: FC = () => {
             </Box>
           ) : (
             <Box flexDirection="column">
-              <img src="images/mokkun_side.jpg" alt="" style={{ width: '100%', flexShrink: 0 }} />
+              <ImageListItem>
+                <img src="images/mokkun_2.jpg" alt="" style={{ width: '100%' }} />
+              </ImageListItem>
               <Box width="100%" flexShrink={0}>
                 <Typography
                   variant="h5"

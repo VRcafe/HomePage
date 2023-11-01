@@ -17,8 +17,8 @@ const Pages = () => {
         <Route path="/HomePage/" element={<IndexPage />} />
         <Route path="/HomePage/menu" element={<MenuPage />} />
         <Route path="/HomePage/cases" element />
-        <Route path="/HomePage/introduction/representative" element={<RepresentativePage />} />
-        <Route path="/HomePage/introduction/viceRepresentative" element={<ViceRepresentativePage />} />
+        <Route path="/HomePage/representative" element={<RepresentativePage />} />
+        <Route path="/HomePage/viceRepresentative" element={<ViceRepresentativePage />} />
         <Route path="/HomePage/introduction" element={<IntroductionPage />} />
       </Routes>
     </>
