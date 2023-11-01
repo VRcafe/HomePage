@@ -20,7 +20,7 @@ export const RepresentativeList: FC = () => {
                 opacity: '0.5',
               },
             }}
-            onClick={() => navigate('/HomePage/representative')}
+            onClick={() => navigate('/representative')}
           >
             <img src="images/mokkun_1.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
@@ -48,7 +48,7 @@ export const RepresentativeList: FC = () => {
                 opacity: '0.5',
               },
             }}
-            onClick={() => navigate('/HomePage/viceRepresentative')}
+            onClick={() => navigate('/viceRepresentative')}
           >
             <img src="images/kato_1.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
@@ -79,7 +79,7 @@ export const RepresentativeList: FC = () => {
                 opacity: '0.5',
               },
             }}
-            onClick={() => navigate('/HomePage/representative')}
+            onClick={() => navigate('/representative')}
           >
             <img src="images/mokkun_1.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
@@ -107,7 +107,7 @@ export const RepresentativeList: FC = () => {
                 opacity: '0.5',
               },
             }}
-            onClick={() => navigate('/HomePage/viceRepresentative')}
+            onClick={() => navigate('/viceRepresentative')}
           >
             <img src="images/kato_1.jpg" alt="" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             <Typography
