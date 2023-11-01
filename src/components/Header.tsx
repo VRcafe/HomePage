@@ -12,7 +12,7 @@ export const Header: FC = () => {
     <>
       <AppBar position="static" style={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
         <Toolbar>
-          <img src="images/logo.png" height="100px" width="100px" alt="" onClick={() => navigate('/HomePage/')} />
+          <img src="images/logo.png" height="100px" width="100px" alt="" onClick={() => navigate('/')} />
           <Typography color="black" component="label" ml={1} sx={{ flexGrow: 1 }} variant="h6"></Typography>
           <Button onClick={() => setIsDrawerOpen(true)}>
             <MenuIcon fontSize="large" sx={{ color: 'black' }} />
@@ -42,7 +42,7 @@ export const Header: FC = () => {
                     transform: 'scale(1.2, 1.2)',
                   },
                 }}
-                onClick={() => navigate('/HomePage/')}
+                onClick={() => navigate('/')}
               >
                 <Typography fontFamily="Shippori Mincho B1" align="center" marginBlock={2} variant="h6">
                   ホーム
@@ -57,7 +57,7 @@ export const Header: FC = () => {
                     transform: 'scale(1.2, 1.2)',
                   },
                 }}
-                onClick={() => navigate('/HomePage/menu')}
+                onClick={() => navigate('/menu')}
               >
                 <Typography fontFamily="Shippori Mincho B1" align="center" marginBlock={2} variant="h6">
                   メニュー
@@ -78,7 +78,7 @@ export const Header: FC = () => {
                   align="center"
                   marginBlock={2}
                   variant="h6"
-                  onClick={() => navigate('/HomePage/introduction')}
+                  onClick={() => navigate('/introduction')}
                 >
                   私たちについて
                 </Typography>
