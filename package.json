@@ -1,6 +1,6 @@
 {
   "name": "homepage",
-  "homepage": "https://vrcafe.github.io/HomePage/#/HomePage",
+  "homepage": "https://vrcafe.github.io/HomePage/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
