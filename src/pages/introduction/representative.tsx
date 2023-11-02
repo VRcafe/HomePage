@@ -23,7 +23,7 @@ const RepresentativePage: FC = () => {
         <Box margin={5}>
           {matches ? (
             <Box display="flex" gap={3}>
-              <img src="images/mokkun_2.jpg" alt="" style={{ width: '50%' }} />
+              <img src="images/mokkun_3.jpg" alt="" style={{ width: '50%' }} />
               <Box width="50%" flexShrink={0}>
                 <Typography
                   variant="h5"
@@ -46,7 +46,7 @@ const RepresentativePage: FC = () => {
           ) : (
             <Box flexDirection="column">
               <ImageListItem>
-                <img src="images/mokkun_2.jpg" alt="" style={{ width: '100%' }} />
+                <img src="images/mokkun_3.jpg" alt="" style={{ width: '100%' }} />
               </ImageListItem>
               <Box width="100%" flexShrink={0}>
                 <Typography
