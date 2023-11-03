@@ -176,6 +176,24 @@ const IndexPage: FC = () => {
           Coming soon...
         </Typography>
       </Box>
+      <Box margin={5} padding={5} bgcolor={'#f0e4bc'} textAlign={'center'}>
+        <Typography
+          variant="body1"
+          style={{ textDecorationLine: 'underline', textUnderlineOffset: '10px', marginBottom: 40 }}
+        >
+          場所
+        </Typography>
+        <Box>
+          <Typography lineHeight="20px">
+            九州大学 伊都キャンパス
+            <br />
+            センター2号館 2202教室
+            <br />
+            <br />
+            テイクアウトもやってます！
+          </Typography>
+        </Box>
+      </Box>
       <Box
         alignItems="center"
         justifyItems="center"
